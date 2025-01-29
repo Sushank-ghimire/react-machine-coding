@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --BACKGROUND_COLOR: white;
+  --TEXT_COLOR: black;
+}
+
+[data-theme="dark"] {
+  --BACKGROUND_COLOR: black;
+  --TEXT_COLOR: white;
+}
+
+[data-theme="red"] {
+  --BACKGROUND_COLOR: red;
+  --TEXT_COLOR: white;
+}
+
+body {
+  background-color: var(--BACKGROUND_COLOR);
+  color: var(--TEXT_COLOR);
+  transition: background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 0.5s ease;
+}

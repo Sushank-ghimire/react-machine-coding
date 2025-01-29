@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--TEXT_COLOR);
+  background-color: var(--BACKGROUND_COLOR);
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: rgb(109, 255, 109);
+  color: black;
+  border: none;
+  transition: all 1s;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
